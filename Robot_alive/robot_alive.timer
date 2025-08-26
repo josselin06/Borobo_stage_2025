@@ -1,0 +1,11 @@
+[Unit]
+Description=Exécute robot_alive.sh toutes les 5 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=4min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

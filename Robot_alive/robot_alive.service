@@ -1,0 +1,8 @@
+[Unit]
+Description=Envoie du fichier last_seen.txt au serveur OVH
+
+[Service]
+Type=oneshot
+User=boroboxavierJETSON_NBR
+ExecStart=/home/boroboxavierJETSON_NBR/Documents/borobo_document/borobo_script/robot_alive.sh
+
