@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 
 # === Paramètres ===
-KHOST = "151.80.119.52"
+KHOST = "adresse IP de notre serveur"
 KPORT = 22
 
 # === Connexion SFTP pour lister les fichiers ===
@@ -178,3 +178,4 @@ def LaunchGui():
 
 if __name__ == "__main__":
     LaunchGui()
+
