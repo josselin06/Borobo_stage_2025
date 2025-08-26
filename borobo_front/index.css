@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  details > summary {
+    cursor: pointer;
+    position: relative;
+    padding-right: 1.5rem;
+  }
+  details > summary::after {
+    content: '➤';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+  }
+  details[open] > summary::after {
+    transform: translateY(-50%) rotate(90deg);
+  }
+}
